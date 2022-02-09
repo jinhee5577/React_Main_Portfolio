@@ -1,0 +1,891 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Russo+One&family=Sunflower:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.App {
+  width: 100%;
+  height: 400vh;
+  background-color: #5b4d96;
+  background-image: linear-gradient(300deg, #22436d 4%, #504385 74%);
+  overflow: hidden !important;
+}
+
+.App .sc {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+.chorong_box {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 44.5%;
+  z-index: 1151;
+}
+
+.chorong_box .chorong {
+  width: 16%;
+  animation: infinite 1.4s R_L;
+  position: relative;
+  animation-direction: alternate;
+  transition: cubic-bezier(0.99, 0.18, 0.17, 0.65) 0.9s;
+  opacity: 0;
+}
+
+.chorong_box .chorong:nth-child(1) {
+  position: relative;
+  left: 35%;
+}
+.chorong_box .chorong:nth-child(2) {
+  position: relative;
+  left: -35%;
+}
+.chorong_box .rong2 {
+  margin-left: auto;
+}
+
+.chorong_box .chorong img {
+  width: 100%;
+  position: relative;
+  z-index: 153;
+}
+
+.chorong_box .chorong span {
+  width: 30px;
+  height: 26px;
+  background: rgba(243, 243, 60, 0.651);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 22px rgba(238, 238, 77, 0.616);
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
+
+.chorong_box .chorong:nth-child(1) span {
+  left: 36%;
+}
+.chorong_box .chorong:nth-child(2) span {
+  left: 18%;
+}
+@keyframes R_L {
+  from {
+    transform: translateY(-8px) rotateY(30deg);
+  }
+  to {
+    transform: translateY(10px) rotateY(-30deg);
+  }
+}
+
+@media all and (max-width: 1920px) {
+  .App {
+    width: 100%;
+  }
+  .App .sc {
+    width: 100%;
+  }
+  .App .sc1 {
+    background-color: #5b4d96;
+    background-image: linear-gradient(315deg, #504385 4%, #22436d 74%);
+  }
+  .App .sc1 header {
+    width: 82%;
+    padding: 10px 3px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 555555555;
+  }
+
+  .App .sc1 header button {
+    width: 18%;
+    line-height: 40px;
+    border-radius: 30px;
+    background: none;
+    border: 2.5px solid rgba(79, 116, 171, 0.45);
+    color: rgb(149, 195, 241);
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold !important;
+    box-shadow: 0 0 8px 4px rgb(99, 180, 226);
+    animation: button 1s forwards;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: scale(1);
+  }
+  @keyframes button {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .sc1 header button:nth-child(1) {
+    animation-delay: 0.25s;
+  }
+  .sc1 header button:nth-child(2) {
+    animation-delay: 0.35s;
+  }
+  .sc1 header button:nth-child(3) {
+    animation-delay: 0.45s;
+  }
+  .sc1 header button:nth-child(4) {
+    animation-delay: 0.55s;
+  }
+  .sc1 header button.click {
+    color: rgb(167, 94, 216);
+    box-shadow: 0 0 8px 5px rgb(190, 99, 226);
+    transform: scale(0.8);
+  }
+
+  .App .sc1 h2 {
+    width: 55% !important;
+    margin: 0 auto;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 2.1rem;
+    font-family: "Jua", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(238, 234, 234);
+    animation: jinhee 0.8s forwards;
+    opacity: 0;
+    animation-delay: 1.4s;
+  }
+
+  @keyframes jinhee {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    45% {
+      opacity: 0.7;
+      transform: scale(1.17);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .chorong_box .chorong {
+    width: 7%;
+  }
+
+  .chorong_box .chorong span {
+    width: 40px;
+    height: 35px;
+    top: 45%;
+    left: 15%;
+  }
+
+  .chorong_box .chorong:nth-child(1) span {
+    left: 42%;
+  }
+  .chorong_box .chorong:nth-child(2) span {
+    left: 23%;
+  }
+
+  .App .sc2 {
+    width: 88%;
+    padding: 20px 0;
+    padding-top: 90px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .App .sc3 {
+    width: 88%;
+    padding: 20px 0;
+    padding-top: 90px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+  }
+  .App .sc4 {
+    background: rgba(220, 20, 60, 0.39);
+  }
+
+  .App .sc2 .profile {
+    width: 32%;
+    height: 80vh;
+    transition: cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s;
+    clip-path: circle(10% at 50% 40%);
+    opacity: 0;
+  }
+  .sc2.active .profile {
+    opacity: 1;
+    clip-path: circle(90% at 50% 50%) !important;
+  }
+
+  .App .sc2 .about {
+    width: 150px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(220, 231, 247);
+    border-radius: 15px;
+    font-family: "Jua", sans-serif;
+    position: relative;
+    margin-top: 15px;
+  }
+  .App .sc2 .about span {
+    display: inline-block;
+    width: 4px;
+    height: 3px;
+    border-radius: 50px;
+    background: rgba(185, 125, 241, 0.712);
+    box-shadow: 0 0 7px 2px rgba(185, 131, 236, 0.774);
+    position: absolute;
+    z-index: 11;
+    transition: all 0.1s cubic-bezier(0.33, 0.77, 0, 0.36);
+  }
+
+  .sc2 .about .l1 {
+    top: 0;
+    left: 10px;
+  }
+  .sc2 .about .l2 {
+    top: 0;
+    right: 10px;
+  }
+  .sc2 .about .l3 {
+    bottom: 0;
+    right: 10px;
+  }
+  .sc2 .about .l4 {
+    bottom: 0;
+    left: 10px;
+  }
+
+  .sc2 .about:hover .l1 {
+    width: 130px !important;
+  }
+  .sc2 .about:hover .l2 {
+    height: 40px !important;
+  }
+  .sc2 .about:hover .l3 {
+    width: 130px !important;
+  }
+  .sc2 .about:hover .l4 {
+    height: 40px !important;
+  }
+
+  .App .sc2 .profile article {
+    width: 86%;
+    margin-left: auto;
+    margin-top: 40px;
+  }
+  .sc2 .profile article h4 {
+    color: rgb(234, 242, 247);
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 30px;
+    font-family: "Sunflower", sans-serif;
+  }
+  .App .sc2 .history {
+    width: 32%;
+    height: 80vh;
+  }
+  .App .sc2 .certificate {
+    width: 32%;
+    height: 80vh;
+    /* background: rgba(216, 170, 170, 0.301); */
+    /* clip-path: circle(30% at 50% 50%); */
+  }
+
+  .sc2 .history aside {
+    width: 80%;
+    margin-left: auto;
+    margin-top: 40px;
+    color: rgb(233, 241, 247);
+    font-weight: 100;
+    font-size: 1.45rem;
+    line-height: 30px;
+    font-family: "Sunflower", sans-serif;
+  }
+  .sc2 .history aside .timeline {
+    display: flex;
+    margin-bottom: 25px;
+    position: relative;
+    opacity: 0;
+  }
+
+  .sc2.active aside .timeline {
+    animation: rr_mv cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+  }
+
+  @keyframes rr_mv {
+    from {
+      opacity: 0;
+      transform: translateX(-45px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .sc2.active aside .timeline:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .sc2.active aside .timeline:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .sc2.active aside .timeline:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .sc2.active aside .timeline:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .sc2.active aside .timeline:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  .sc2 aside .timeline span {
+    display: block;
+    width: 15px;
+    height: 12px;
+    position: relative;
+    top: 8px;
+    left: -5px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    animation: backch 1.5s infinite;
+    transition: all 1s;
+  }
+  @keyframes backch {
+    0% {
+      background: rgba(162, 233, 140, 0.45);
+    }
+    47% {
+      background: rgba(199, 145, 224, 0.45);
+    }
+    100% {
+      background: rgba(106, 203, 241, 0.45);
+    }
+  }
+
+  .sc2 aside .timeline .contbox {
+    margin-left: 10px;
+  }
+
+  .history aside .timeline h4 {
+    font-size: 1.2rem;
+    color: rgb(167, 209, 248);
+  }
+
+  .sc2 .certificate aside {
+    width: 85%;
+    margin-left: auto;
+    margin-top: 40px;
+    color: rgb(233, 241, 247);
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-family: "Sunflower", sans-serif;
+  }
+
+  .sc2 .certificate aside .timeline {
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    opacity: 0;
+  }
+
+  .sc2.active .certificate aside.timeline {
+    animation: rr_mv2 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+  }
+  @keyframes rr_mv2 {
+    from {
+      opacity: 0;
+      transform: translateX(-45px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .sc2.active .certificate aside .timeline:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .sc2.active .certificate aside .timeline:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .sc2.active .certificate aside .timeline:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .sc2.active .certificate aside .timeline:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .sc2.active .certificate aside .timeline:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  .certificate aside .timeline h4 {
+    font-size: 1.1rem;
+    color: rgb(167, 209, 248);
+  }
+
+  .App .sc3 h1 {
+    width: 160px;
+    line-height: 55px;
+    font-style: italic;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    font-family: "Russo One", sans-serif;
+    color: white;
+    text-shadow: 4px 3px 5px rgba(48, 48, 48, 0.349);
+    transition: 0.3s cubic-bezier(0.18, 0.82, 0, 0.36);
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  .App .sc3.active h1 {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .App .sc3 .skillbox {
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+  }
+  .sc3 .skillbox::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(160, 154, 247, 0.062);
+    position: absolute;
+    top: -100%;
+    left: 28%;
+    transform: translateX(-50%);
+    animation: 2s won_T infinite;
+    box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.6);
+  }
+  @keyframes won_T {
+    0% {
+      opacity: 0.1;
+      transform: scale(0.2);
+      /* box-shadow: 0 0 0 0 rgba(213, 112, 238, 0.5); */
+    }
+
+    70% {
+      opacity: 0.7;
+      transform: scale(1.6);
+      box-shadow: 0 0 10px 120px rgba(112, 135, 238, 0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0.2);
+      box-shadow: 0 0 0 0 rgba(112, 135, 238, 0);
+    }
+  }
+  .App .sc3 .skillbox ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .App .sc3 .skillbox ul li {
+    width: 14%;
+    height: auto;
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(221, 235, 247);
+    font-family: "Sunflower", sans-serif;
+  }
+  .App .sc3.active .skillbox ul li {
+    animation: turn 0.5s forwards;
+    transition: all 0.5s;
+  }
+
+  @keyframes turn {
+    from {
+      opacity: 0;
+      transform: rotateY(200deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  .sc3 .skillbox ul li img {
+    width: 30%;
+    margin-bottom: 25px;
+    animation: moving 0.6s infinite ease-in-out;
+    animation-direction: alternate;
+  }
+  @keyframes moving {
+    from {
+      transform: translateY(-4px);
+    }
+    to {
+      transform: translateY(4px);
+    }
+  }
+  .sc3 .skillbox ul li h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .skillbox ul li h5 {
+    font-size: 1.3rem;
+    font-family: "Russo One", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 4px 3px 6px rgba(54, 54, 54, 0.377);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .App {
+    width: 100%;
+    height: auto;
+  }
+  .App .sc {
+    width: 100%;
+  }
+  .App .sc1 header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .App .sc1 header button {
+    width: 22%;
+    line-height: 40px;
+    border-radius: 30px;
+    color: rgb(163, 202, 241);
+    text-align: center;
+    font-size: 0.8rem;
+    box-shadow: 0 0 8px 2px rgb(99, 180, 226);
+    transition: all 0.4s;
+    transform: scale(1);
+  }
+  .sc1 header button.click {
+    color: rgb(167, 94, 216);
+    box-shadow: 0 0 8px 3px rgb(203, 129, 233);
+    transform: scale(0.9);
+  }
+  .App .sc1 h2 {
+    width: 82% !important;
+    top: 40%;
+    font-size: 1.78rem;
+    line-height: 38px;
+    font-family: "Jua", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(238, 234, 234);
+  }
+
+  .chorong_box {
+    top: 48%;
+    z-index: 1151;
+  }
+  .chorong_box .chorong {
+    width: 14%;
+  }
+
+  .chorong_box .chorong span {
+    width: 22px;
+    height: 15px;
+  }
+
+  .chorong_box .chorong:nth-child(1) span {
+    left: 35.5%;
+  }
+  .chorong_box .chorong:nth-child(2) span {
+    left: 18%;
+  }
+
+  .App .sc2 {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .App .sc3 {
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 70px;
+    margin-top: 1000px;
+    box-sizing: border-box;
+  }
+
+  .App .sc4 {
+    width: 100%;
+    padding-top: 70px;
+    margin-top: 40px;
+  }
+
+  .App .sc2 .profile {
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+    transition: cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s;
+    clip-path: circle(10% at 50% 40%);
+    opacity: 0;
+  }
+  .sc2 .profile.ac_600 {
+    opacity: 1;
+    clip-path: circle(90% at 50% 50%) !important;
+  }
+
+  .App .sc2 .about {
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(220, 231, 247);
+    border-radius: 15px;
+    font-family: "Jua", sans-serif;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+  .App .sc2 .about span {
+    display: inline-block;
+    width: 4px;
+    height: 3px;
+    border-radius: 50px;
+    background: rgba(185, 125, 241, 0.712);
+    box-shadow: 0 0 7px 2px rgba(185, 131, 236, 0.774);
+    position: absolute;
+    z-index: 11;
+    transition: all 0.1s cubic-bezier(0.33, 0.77, 0, 0.36);
+  }
+
+  .sc2 .about .l1 {
+    top: 0;
+    left: 10px;
+  }
+  .sc2 .about .l2 {
+    top: 0;
+    right: 10px;
+  }
+  .sc2 .about .l3 {
+    bottom: 0;
+    right: 10px;
+  }
+  .sc2 .about .l4 {
+    bottom: 0;
+    left: 10px;
+  }
+
+  .sc2 .about:hover .l1 {
+    width: 4px !important;
+  }
+  .sc2 .about:hover .l2 {
+    height: 3px !important;
+  }
+  .sc2 .about:hover .l3 {
+    width: 4px !important;
+  }
+  .sc2 .about:hover .l4 {
+    height: 3px !important;
+  }
+
+  .App .sc2 .profile article {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-top: 35px;
+  }
+  .sc2 .profile article h4 {
+    color: rgb(234, 242, 247);
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 30px;
+    font-family: "Sunflower", sans-serif;
+  }
+  .App .sc2 .certificate {
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+    /* background: rgba(216, 170, 170, 0.26); */
+    /* clip-path: circle(30% at 50% 50%); */
+  }
+  .App .sc2 .history {
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+    /* background: rgba(255, 140, 0, 0.151); */
+  }
+
+  .sc2 .history aside {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 45px;
+    font-weight: 100;
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+
+  .sc2 .history aside .timeline {
+    margin-bottom: 25px;
+  }
+  .sc2 .history.acti_600 aside .timeline {
+    animation: rr_mv cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+  }
+
+  @keyframes rr_mv {
+    from {
+      opacity: 0;
+      transform: translateX(-45px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .sc2 .history.acti_600 aside .timeline:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .sc2 .history.acti_600 aside .timeline:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .sc2 .history.acti_600 aside .timeline:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .sc2 .history.acti_600 aside.timeline:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+
+  .history aside .timeline h4 {
+    font-size: 1.1rem;
+    color: rgb(167, 209, 248);
+  }
+
+  .sc2 .certificate aside {
+    width: 100%;
+    margin-top: 45px;
+    font-size: 1.45rem;
+    line-height: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .sc2 .certificate aside .timeline {
+    margin-bottom: 20px;
+  }
+  .sc2.acti_602 .certificate aside.timeline {
+    animation: rr_mv2 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+  }
+  @keyframes rr_mv2 {
+    from {
+      opacity: 0;
+      transform: translateX(-45px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .sc2.acti_602 .certificate aside .timeline:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .sc2.acti_602 .certificate aside .timeline:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .sc2.acti_602 .certificate aside .timeline:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .sc2.acti_602 .certificate aside .timeline:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .sc2.acti_602 .certificate aside .timeline:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  .certificate aside .timeline h4 {
+    font-size: 1.1rem;
+    color: rgb(167, 209, 248);
+  }
+
+  .App .sc3 h1 {
+    font-size: 2rem;
+    margin-top: 8%;
+  }
+
+  .App .sc3 .skillbox {
+    margin-top: 30px;
+    position: relative;
+  }
+  .sc3 .skillbox::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(160, 154, 247, 0.062);
+    position: absolute;
+    top: -17%;
+    left: -23%;
+    transform: translateX(-50%);
+    animation: 2s won_T infinite;
+    box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.5);
+  }
+
+  .App .sc3 .skillbox ul li {
+    width: 29%;
+    margin-bottom: 25px;
+  }
+
+  .sc3 .skillbox ul li img {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+
+  .sc3 .skillbox ul li h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .skillbox ul li h5 {
+    font-size: 1.25rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+}
