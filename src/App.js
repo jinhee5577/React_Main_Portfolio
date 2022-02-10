@@ -1,6 +1,5 @@
  /*eslint-disable*/ 
  import React, { Component, useEffect, useState, useRef, } from 'react';
- import { PieChart } from 'react-minimal-pie-chart';
  import chorong from './aesset/chorong.png';
  import chorong2 from './aesset/chorong2.png';
  import react_img from './aesset/react_img.png';
@@ -21,94 +20,98 @@ function App() {
             chorong[0].style.left = 0;
             chorong[1].style.left = 0;
             chorong.forEach( (item) => { item.style.opacity = 1; } );
-          }, 270);      
+          }, 270);           
 
-        let section = document.querySelectorAll('.sc');
-        let header = document.querySelector('.sc1 > header'); 
-        let onbutton = document.querySelectorAll('header > button'); 
-        let profile = document.querySelector('.profile');
-        let history = document.querySelector('.history');
-        let certificate = document.querySelector('.certificate');
-        let media_600 = matchMedia('screen and (max-width: 600px)'); 
-    
-        let sc_num = 0;
-        let scoffset = 0;
-        header.addEventListener('click', (e) => {
-              e.preventDefault();
-              sc_num = Number(e.target.getAttribute('num'));                    
-              scoffset = section[sc_num].offsetTop;
-              if(media_600.matches){      
-                  if(sc_num >= 2){
-                    window.scrollTo({top : scoffset, behavior:'smooth'});               
-                  } else {
-                      window.scrollTo({top : scoffset, behavior:'smooth'});
-                  }                   
-              } else {
-                  window.scrollTo({top : scoffset, behavior:'smooth'});
-              }                           
-              change_button();
-              setTimeout(loadaction, 450);        
-         });
+        return () => { clearTimeout(blackmoon); }
+    }, [] );
 
-         window.addEventListener('scroll', () => { 
-            if(window.pageYOffset > 0){
-                sc_num = 0;
-                change_button();                
-                setTimeout(loadaction, 450);        
-            }
-            if(window.pageYOffset > section[1].offsetTop - 100){ 
-                sc_num = 1; 
-                change_button();   
-                if(media_600.matches){                     
-                   if(window.pageYOffset > section[1].offsetTop - 100){
-                         section[1].classList.remove('active');                                           
-                         profile.classList.add('ac_600');
-                   }
-                   if(window.pageYOffset > section[1].offsetTop + 300){                                            
-                         history.classList.add('acti_600');                    
-                   }
-                   if(window.pageYOffset > section[1].offsetTop + 500){  
-                         section[1].classList.add('acti_602');
-                   }
-                } else {        
-                    setTimeout(loadaction, 450); 
-                }      
-            }
-            if(window.pageYOffset > section[2].offsetTop - 100){
-                 sc_num = 2;
-                 change_button();
-                 setTimeout(loadaction, 450);   
-            }
-            if(window.pageYOffset > section[3].offsetTop - 100 ){
-                 sc_num = 3;
-                 change_button();
-                 setTimeout(loadaction, 450);    
-            }
-
-            if(media_600.matches){
-                if(window.pageYOffset > section[1].offsetTop - 50){
-                    chorong.forEach( (item) => { item.style.opacity = 0; } );
+    useEffect(() => { 
+          let chorong = document.querySelectorAll('.chorong');
+          let section = document.querySelectorAll('.sc');
+          let header = document.querySelector('.sc1 > header'); 
+          let onbutton = document.querySelectorAll('header > button'); 
+          let profile = document.querySelector('.profile');
+          let history = document.querySelector('.history');
+          let certificate = document.querySelector('.certificate');
+          let media_600 = matchMedia('screen and (max-width: 600px)'); 
+      
+          let sc_num = 0;
+          let scoffset = 0;
+          header.addEventListener('click', (e) => {
+                e.preventDefault();
+                sc_num = Number(e.target.getAttribute('num'));                    
+                scoffset = section[sc_num].offsetTop;
+                if(media_600.matches){      
+                    if(sc_num >= 2){
+                      window.scrollTo({top : scoffset, behavior:'smooth'});               
+                    } else {
+                        window.scrollTo({top : scoffset, behavior:'smooth'});
+                    }                   
                 } else {
-                    chorong.forEach( (item) => { item.style.opacity = 1; } );
-                }
-            }             
+                    window.scrollTo({top : scoffset, behavior:'smooth'});
+                }                           
+                change_button();
+                setTimeout(loadaction, 450);        
+          });
 
-         });
+          window.addEventListener('scroll', () => { 
+              if(window.pageYOffset > 0){
+                  sc_num = 0;
+                  change_button();  
+                  profile.classList.remove('ac_600');                     
+                  setTimeout(loadaction, 450);        
+              }
+              if(window.pageYOffset > section[1].offsetTop - 100){ 
+                  sc_num = 1; 
+                  change_button();   
+                  if(media_600.matches){    
+                      section[1].classList.remove('active');                                           
+                      profile.classList.add('ac_600');                   
+                      if(window.pageYOffset > section[1].offsetTop + 300){                                       
+                            history.classList.add('acti_600');                    
+                      }
+                      if(window.pageYOffset > section[1].offsetTop + 600){  
+                            certificate.classList.add('acti_602');
+                      }
+                    } else {        
+                        setTimeout(loadaction, 450); 
+                    }      
+              }
+              if(window.pageYOffset > section[2].offsetTop - 100){  
+                  history.classList.remove('acti_600');        
+                  certificate.classList.remove('acti_602');
+                  sc_num = 2;
+                  change_button();
+                  setTimeout(loadaction, 450);   
+              }
+              if(window.pageYOffset > section[3].offsetTop - 100 ){
+                  sc_num = 3;
+                  change_button();
+                  setTimeout(loadaction, 450);    
+              }
 
-        function loadaction(){
-            section.forEach((sc) => { sc.classList.remove('active'); });
-            section[sc_num].classList.add('active');
-        }
+              if(media_600.matches){
+                  if(window.pageYOffset > section[1].offsetTop - 50){
+                      chorong.forEach( (item) => { item.style.opacity = 0; } );
+                  } else {
+                      chorong.forEach( (item) => { item.style.opacity = 1; } );
+                  }
+              }             
 
-        function change_button (){
+          });
+
+          function loadaction(){
+              section.forEach((sc) => { sc.classList.remove('active'); });
+              section[sc_num].classList.add('active');
+          }
+
+          function change_button (){
               onbutton.forEach((ele) => {
                       ele.classList.remove('click');   
                 });
               onbutton[sc_num].classList.add('click');                
-         }
-
-        return () => { clearTimeout(blackmoon); }
-    }, [] );
+          }
+     });
 
   return (
     <div className="App">   
@@ -201,19 +204,7 @@ function App() {
             <Skills img={jquery_img} number={90} name='Jquery'/>
             <Skills img={boot_img} number={80} name='Bootstap'/>
           </ul>
-        </div>
-        {/* <PieChart
-          data={[
-            { title: 'One', value: 95, color: '#' }
-          ]}
-          reveal={95} lineWidth={15} background='#E38627'
-          lengthAngle={330} rounded={true} animate={500} 
-          animationDuration={500}  startAngle={0}
-          label={({ dataEntry }) => dataEntry.value + '%' }
-          labelStyle={{fontSize : '16px', fill : 'black', }}
-          labelPosition={0}     
-        /> */}
-        
+        </div>     
       </section>
       <section className='sc sc4'>
 

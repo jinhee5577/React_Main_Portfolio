@@ -208,7 +208,7 @@ a {
   .App .sc2 {
     width: 88%;
     padding: 20px 0;
-    padding-top: 90px;
+    padding-top: 110px;
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
@@ -334,7 +334,7 @@ a {
     opacity: 0;
   }
 
-  .sc2.active aside .timeline {
+  .sc2.active .history aside .timeline {
     animation: rr_mv cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
   }
 
@@ -348,20 +348,17 @@ a {
       transform: translateX(0px);
     }
   }
-  .sc2.active aside .timeline:nth-child(1) {
+  .sc2.active .history aside .timeline:nth-child(1) {
     animation-delay: 0.1s;
   }
-  .sc2.active aside .timeline:nth-child(2) {
+  .sc2.active .history aside .timeline:nth-child(2) {
     animation-delay: 0.3s;
   }
-  .sc2.active aside .timeline:nth-child(3) {
+  .sc2.active .history aside .timeline:nth-child(3) {
     animation-delay: 0.5s;
   }
-  .sc2.active aside .timeline:nth-child(4) {
+  .sc2.active .history aside .timeline:nth-child(4) {
     animation-delay: 0.7s;
-  }
-  .sc2.active aside .timeline:nth-child(5) {
-    animation-delay: 1s;
   }
 
   .sc2 aside .timeline span {
@@ -414,7 +411,7 @@ a {
     opacity: 0;
   }
 
-  .sc2.active .certificate aside.timeline {
+  .sc2.active .certificate aside .timeline {
     animation: rr_mv2 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
   }
   @keyframes rr_mv2 {
@@ -631,23 +628,26 @@ a {
 
   .App .sc2 {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 85px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .App .sc3 {
     width: 100%;
+    height: auto;
     padding: 0 10px;
     padding-top: 70px;
-    margin-top: 1000px;
+    margin-top: 1020px;
+    /* background: #22436d; */
     box-sizing: border-box;
   }
 
   .App .sc4 {
     width: 100%;
+    /* height: auto; */
     padding-top: 70px;
-    margin-top: 40px;
+    box-sizing: border-box;
   }
 
   .App .sc2 .profile {
@@ -763,10 +763,10 @@ a {
     margin-bottom: 25px;
   }
   .sc2 .history.acti_600 aside .timeline {
-    animation: rr_mv cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+    animation: rr_mv3 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
   }
 
-  @keyframes rr_mv {
+  @keyframes rr_mv3 {
     from {
       opacity: 0;
       transform: translateX(-45px);
@@ -806,10 +806,10 @@ a {
   .sc2 .certificate aside .timeline {
     margin-bottom: 20px;
   }
-  .sc2.acti_602 .certificate aside.timeline {
-    animation: rr_mv2 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
+  .sc2 .certificate.acti_602 aside .timeline {
+    animation: rr_mv4 cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s forwards;
   }
-  @keyframes rr_mv2 {
+  @keyframes rr_mv4 {
     from {
       opacity: 0;
       transform: translateX(-45px);
@@ -819,19 +819,19 @@ a {
       transform: translateX(0px);
     }
   }
-  .sc2.acti_602 .certificate aside .timeline:nth-child(1) {
+  .sc2 .certificate.acti_602 aside .timeline:nth-child(1) {
     animation-delay: 0.1s;
   }
-  .sc2.acti_602 .certificate aside .timeline:nth-child(2) {
+  .sc2 .certificate.acti_602 aside .timeline:nth-child(2) {
     animation-delay: 0.3s;
   }
-  .sc2.acti_602 .certificate aside .timeline:nth-child(3) {
+  .sc2 .certificate.acti_602 aside .timeline:nth-child(3) {
     animation-delay: 0.5s;
   }
-  .sc2.acti_602 .certificate aside .timeline:nth-child(4) {
+  .sc2 .certificate.acti_602 aside .timeline:nth-child(4) {
     animation-delay: 0.7s;
   }
-  .sc2.acti_602 .certificate aside .timeline:nth-child(5) {
+  .sc2 .certificate.acti_602 aside .timeline:nth-child(5) {
     animation-delay: 1s;
   }
 
@@ -858,7 +858,7 @@ a {
     border-radius: 50%;
     background: rgba(160, 154, 247, 0.062);
     position: absolute;
-    top: -17%;
+    top: -15%;
     left: -23%;
     transform: translateX(-50%);
     animation: 2s won_T infinite;
