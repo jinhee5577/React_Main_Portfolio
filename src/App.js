@@ -9,6 +9,8 @@
  import css_img from './aesset/css_img.png';
  import jquery_img from './aesset/jquery_img.gif';
  import boot_img from './aesset/boot_img.png';
+ import Project from './Project.js';
+
 //  import { Link, Route, Routes, } from 'react-router-dom';
  import './App.css';
 
@@ -130,7 +132,7 @@ function App() {
              <button num='0'>HOME</button>
              <button num='1'>ABOUT</button>
              <button num='2'>SKILLS</button>
-             <button num='3'>PORTFOLIO</button>       
+             <button num='3'>PROJECT</button>       
         </header>
         <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드개발, 웹퍼블리셔를 지원하는 오진희 입니다.</h2>     
       </section>
@@ -193,7 +195,7 @@ function App() {
         </div>        
       </section>
       <section className='sc sc3'>
-        <h1>SKILLS</h1>
+        <h1 className='title'>SKILLS</h1>
         <div className='skillbox'>
           <ul>
             <Skills img={react_img} number={90} name='React'/>
@@ -207,7 +209,7 @@ function App() {
         </div>     
       </section>
       <section className='sc sc4'>
-
+        <Project />
       </section>     
     </div>
   );
