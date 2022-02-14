@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jua&family=Russo+One&family=Sunflower:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hahmlet:wght@100;300;400&family=Jua&family=Russo+One&family=Sunflower:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -582,13 +582,21 @@ a {
 
   .App .sc4 #project .title {
     color: rgb(240, 248, 250);
-    width: 100%;
+    width: 160px;
     text-align: center;
     line-height: 55px;
+    margin: 0 auto;
     font-style: italic;
     font-size: 2.4rem;
     font-family: "Russo One", sans-serif;
     text-shadow: 4px 3px 5px rgba(48, 48, 48, 0.349);
+    transition: 0.3s cubic-bezier(0.18, 0.82, 0, 0.36);
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  .App .sc4.active #project .title {
+    opacity: 1;
+    transform: translateX(0px);
   }
 
   .App .sc4 #project #project_box {
@@ -605,16 +613,57 @@ a {
     border-radius: 30px;
     overflow: hidden;
     background: rgba(177, 198, 240, 0.2);
-    /* border: 2px solid rgba(107, 157, 233, 0.2); */
+    position: relative;
+    cursor: pointer;
+  }
+
+  #project_box .base #explanation {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #96c8fb;
+    background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    transition: all 0.45s;
+    color: rgb(53, 55, 56);
+    opacity: 0;
+    clip-path: circle(10% at 50% 50%);
+    text-align: left;
+    font-family: "Hahmlet", serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+  #project_box .base #explanation span {
+    font-size: 0.96rem;
+    color: rgb(75, 9, 83);
+    font-weight: 500 !important;
+  }
+
+  #project_box .base:hover #explanation {
+    opacity: 1 !important;
+    clip-path: circle(90% at 50% 50%) !important;
   }
   #project_box .base .proimg_box {
     width: 95%;
     height: calc(100% - 60px);
-    background-image: url(./aesset/main_p.png);
     background-size: 105%;
+    margin: 0 auto;
     /* background-color: aliceblue; */
-    background-position: 0% 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
+  }
+
+  #project #project_box .base1 .proimg_box {
+    background-image: url(./aesset/main_p.png);
+  }
+  #project #project_box .base2 .proimg_box {
+    background-image: url(./aesset/main_p2.png);
+    background-size: 103.5%;
+    background-position: 50% 120%;
   }
 
   #project_box .base .button_box {
@@ -633,7 +682,7 @@ a {
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
-    margin-top: 4px;
+    margin-top: 5px;
   }
   #project_box .base .button_box li {
     width: 40%;
@@ -668,9 +717,7 @@ a {
     font-size: 0.7rem;
     margin-top: 9px;
   }
-  /* .base .button_box li a:hover .button_box li a img {
-    transform: rotateY(270deg);
-  } */
+
   /* 
   #project_box .base article {
     width: 100%;
@@ -1029,21 +1076,34 @@ a {
   .App .sc4 #project #project_box {
     width: 86%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
     /* background: rgba(128, 255, 0, 0.363); */
   }
   .sc4 #project #project_box .base {
     width: 95% !important;
-    height: 310px;
+    height: 350px;
     background: rgba(177, 198, 240, 0.2);
-    /* border: 2px solid rgba(107, 157, 233, 0.2); */
   }
+  #project_box .base #explanation {
+    color: rgb(53, 55, 56);
+    font-size: 0.78rem;
+    font-weight: 400;
+  }
+  #project_box .base #explanation span {
+    font-size: 0.85rem;
+  }
+
   #project_box .base .proimg_box {
     width: 96%;
-    height: calc(100% - 60px);
     background-size: 105%;
     /* background-color: aliceblue; */
-    background-position: 0% 40%;
+    background-position: 50% 50%;
+  }
+
+  #project #project_box .base2 .proimg_box {
+    background-image: url(./aesset/main_p2.png);
+    background-size: 102%;
+    background-position: 50% 35%;
   }
 
   #project_box .base .button_box {

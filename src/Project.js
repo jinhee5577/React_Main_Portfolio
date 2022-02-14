@@ -1,17 +1,20 @@
  /*eslint-disable*/ 
  import React, { Component, useEffect, useState, useRef, } from 'react';
  import './App.css';
+ import Data from './data.js';
  import Slider from "react-slick";
  import github from './aesset/github.png';
  import mobile from './aesset/mobile.png';
  import "slick-carousel/slick/slick.css";
  import "slick-carousel/slick/slick-theme.css";
 
- function Project( {sliders} ){    
-     let imgRef = useRef();  
-   
+
+ function Project( {sliders} ){ 
+     let [data, setdata] = useState(Data);       
+     let baseRef = useRef();  
+  
      useEffect(() => { 
-         
+         let base = document.querySelectorAll('.base');
           
      }, []);
 
@@ -20,29 +23,34 @@
           <h1 className='title'>PROJECT</h1>
           <div id ="project_box">
             <Slider {...settings} width="100%">
-              <div className='base'>
-                <div className='proimg_box'>           
-                </div>                 
-                <ul className='button_box'>
-                  <li>
-                    <a ref={imgRef} href='https://github.com/jinhee5577/JHreact'>
-                      <img src={github} alt='github'/>
-                      <span>Github</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='https://jinhee5577.github.io/reactJH/'>
-                      <img src={mobile} alt='homepage'/>
-                      <span>Homepage</span>
-                    </a>
-                  </li>                  
-                </ul>                     
-              </div>                
-              <div className='base'></div>
-              <div className='base'>3</div>
-              <div className='base'>4</div>
-              <div className='base'>5</div>
-                {/* <Base />  컴포넌트로 돌릴경우 position 에러남. */}
+              {
+                data.map((item, i) => { 
+                        return (
+                          <div className={`base base${item.id}`} key={i}>
+                            <header id="explanation">
+                              <p>{item.explanation}</p>
+                            </header>
+                            <div className='proimg_box'>           
+                            </div>                 
+                            <ul className='button_box'>
+                              <li>
+                                <a href={item.gitlink}>
+                                  <img src={github} alt='github'/>
+                                  <span>Github</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href={item.homelink}>
+                                  <img src={mobile} alt='homepage'/>
+                                  <span>Homepage</span>
+                                </a>
+                              </li>                  
+                            </ul>                     
+                          </div>  
+                        );
+                  })
+              }                    
+              {/* <Base />  컴포넌트로 돌릴경우 position 에러남. */}
             </Slider>    
           </div>
         </div>
