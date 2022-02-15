@@ -28,7 +28,7 @@
                         return (
                           <div className={`base base${item.id}`} key={i}>
                             <header id="explanation">
-                              <p>{item.explanation}</p>
+                              {item.explanation}
                             </header>
                             <div className='proimg_box'>           
                             </div>                 

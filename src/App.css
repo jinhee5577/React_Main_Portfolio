@@ -665,6 +665,16 @@ a {
     background-size: 103.5%;
     background-position: 50% 120%;
   }
+  #project #project_box .base3 .proimg_box {
+    background-image: url(./aesset/portmain2.png);
+    background-size: 100%;
+    background-position: 50% -60%;
+  }
+  #project #project_box .base4 .proimg_box {
+    background-image: url(./aesset/portmain3.png);
+    background-size: 100%;
+    background-position: 50% -60%;
+  }
 
   #project_box .base .button_box {
     width: 100%;
@@ -1104,6 +1114,12 @@ a {
     background-image: url(./aesset/main_p2.png);
     background-size: 102%;
     background-position: 50% 35%;
+  }
+  #project #project_box .base3 .proimg_box {
+    background-position: 50% 50%;
+  }
+  #project #project_box .base4 .proimg_box {
+    background-position: 50% 52%;
   }
 
   #project_box .base .button_box {
