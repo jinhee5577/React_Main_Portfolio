@@ -650,7 +650,7 @@ a {
   #project_box .base .proimg_box {
     width: 95%;
     height: calc(100% - 60px);
-    background-size: 105%;
+    background-size: 102.5%;
     margin: 0 auto;
     /* background-color: aliceblue; */
     background-position: 50% 50%;
@@ -674,6 +674,11 @@ a {
     background-image: url(./aesset/portmain3.png);
     background-size: 100%;
     background-position: 50% -60%;
+  }
+  #project #project_box .base5 .proimg_box {
+    background-image: url(./aesset/portmain4.png);
+    background-size: 102.5%;
+    background-position: 50% 60%;
   }
 
   #project_box .base .button_box {

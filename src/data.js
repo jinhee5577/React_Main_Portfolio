@@ -22,34 +22,28 @@ export default [
                homelink : 'https://jinhee5577.github.io/reactJH/'        
             },
             {  id : 3,
-               explanation : <p><br/> <span>React</span>로 개발된 포토폴리오 웹페이지 입니다.<br/>
-                            PC와 모바일에서 보기 적합하도록 반응형 웹사이트로 제작하였습니다.<br/><br/>
+               explanation : <p><br/> <span>React</span>로 개발된 <span>메인 포토폴리오</span> 웹페이지 입니다.<br/>
+                            PC와 모바일에서 보기 적합하도록 <span>반응형 웹사이트</span>로 제작하였습니다.<br/><br/>
                             좀더 다양한 인터렉티브한 페이지로 제작하기 위해 <span>CSS</span>와 <span>Javascript</span>로 직접 개발하였습니다. </p>,
                gitlink : 'https://github.com/jinhee5577/Main_Portfolio',     
                homelink : 'https://jinhee5577.github.io/Jinhee_PF/'        
             },
             {  id : 4,
-               explanation : <p><span>NAUM_mall</span> 프로젝트는 제가 그전회사에서 마지막으로 맡은 프로젝트 입니다.
-                             <br/><br/>
-                            <span>React</span> 로 개발된 웹페이지이며, <span>Redux</span>를 사용하여 쇼핑몰에서 장바구니페이지 의
-                            기본적인 CRUD기능과 중복 상품은 추가되지 않도록 기능개발 되었습니다. 
-                            그외 더보기상품은 API를  <span>axios</span>로 요청 하여 불러옵니다.<br/><br/>
-                            <span>Localstorage</span>를 이용하여 최근본 상품의 정보를 3개까지만 중복제거하여 이미지가 추가됩니다.<br/>
-                            <span>그외에도 몇가지 기능개발이 더있습니다. 다음 박스에서 설명 드리겠습니다.</span></p>,
+               explanation : <p><span>NAUM_mall</span> 프로젝트는 제가 그전회사에서 마지막으로 맡은 쇼핑몰 리뉴얼프로젝트 입니다.<br/><br/>
+                              목포에서 만큼은 가장 세련된 쇼핑몰 사이트 가 나올수있도록 대표 메이저 백화점 사이트를 참고하였습니다.<br/> 
+                              웹,모바일 버전의 각각의 메인 페이지부터 서브페이지까지 <span>디자인과 퍼블리싱 작업</span>을 담당했습니다.<br/><br/>                                                         
+                              이결과물은 <span>모바일버전</span> 용으로 따로 제작되어, 제가 그간 퍼블리싱한 작업들을 백업해서 제 github주소로 업로드한 사이트 입니다. 
+                             </p>,
                gitlink : 'https://github.com/jinhee5577/jinhee5577.github.io',     
                homelink : 'https://jinhee5577.github.io/A이걸봐주세요_naum_moblie.html'        
             },
             {  id : 5,
-               explanation : <p><span>JH VIP</span> 프로젝트는 제가 그동안 react.js의 유료 온라인강의를
-                            수강하면서 공부한 모든 내용들이 들어간 총 집약체 입니다. <br/><br/>
-                            <span>React</span> 로 개발된 웹페이지이며, <span>Redux</span>를 사용하여 쇼핑몰에서 장바구니페이지 의
-                            기본적인 CRUD기능과 중복 상품은 추가되지 않도록 기능개발 되었습니다. 
-                            그외 더보기상품은 API를  <span>axios</span>로 요청 하여 불러옵니다.<br/><br/>
-                            <span>Localstorage</span>를 이용하여 최근본 상품의 정보를 3개까지만 중복제거하여 이미지가 추가됩니다.<br/>
-                            <span>그외에도 몇가지 기능개발이 더있습니다. 다음 박스에서 설명 드리겠습니다.</span></p>,
-               gitlink : 'https://github.com/jinhee5577/JHreact',     
-               homelink : 'https://jinhee5577.github.io/reactJH/'        
-            },
-          
+               explanation : <p><br/><span>SoundBean 카페</span> 프로젝트는 제가 그전회사에서 디자인과 퍼블리싱한 프로젝트중 마음에 드는 결과물중 하나입니다.<br/><br/> 
+                              유명 카페브랜드 사이트들을 참고하여 PC와 모바일에서 각각적합한 <span>반응형 홈페이지</span> 형태로 제작되었습니다.<br/>
+                              각각의 메인 페이지부터 서브페이지까지 <span>디자인과 퍼블리싱 작업</span>을 담당했습니다.<br/>                             
+                             </p>,
+               gitlink : 'https://github.com/jinhee5577',     
+               homelink : 'http://soundbean.shop/'        
+            },          
 
          ];
