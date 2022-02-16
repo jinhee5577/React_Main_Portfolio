@@ -227,9 +227,10 @@ a {
 
   .App .sc4 {
     width: 88%;
-    height: 140vh;
+    height: auto;
     padding: 20px 0;
     padding-top: 90px;
+    padding-bottom: 80px;
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
@@ -604,8 +605,17 @@ a {
     margin: 0 auto;
     margin-top: 40px;
     text-align: center;
+    margin-bottom: 130px;
     /* background: rgba(128, 255, 0, 0.363); */
+    transition: cubic-bezier(0.05, 0.71, 0.68, 0.18) 0.7s;
+    opacity: 0;
+    transform: translateY(40px);
   }
+  .App .sc4.active #project #project_box {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
   .sc4 #project #project_box .base {
     width: 83% !important;
     height: 380px;
@@ -733,15 +743,6 @@ a {
     margin-top: 9px;
   }
 
-  /* 
-  #project_box .base article {
-    width: 100%;
-    height: 250px;
-    background: cornsilk;
-    margin-top: -50px;
-    border-radius: 0px 50px 0 0;
-  } */
-
   #project_box .slick-slide {
     margin: 0 auto;
   }
@@ -758,6 +759,68 @@ a {
   }
   #project_box button.slick-arrow::before {
     color: rgba(150, 207, 240, 0.342) !important;
+  }
+
+  #project footer {
+    width: 75%;
+    margin: 0 auto;
+    background: rgba(138, 115, 202, 0.315);
+    border-radius: 30px;
+    border: 2.5px solid rgba(128, 60, 160, 0.45);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 4px rgba(204, 129, 233, 0.86);
+    display: flex;
+  }
+  #project footer h4 {
+    width: 80%;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: rgb(250, 251, 252);
+    font-family: "Hahmlet", serif;
+    line-height: 27px;
+  }
+  #project footer h4 .f0 {
+    display: inline-block;
+  }
+  #project footer h4 .f1 {
+    display: inline-block;
+    margin-top: 7px;
+    color: rgb(199, 224, 252);
+  }
+  #project footer h4 .f2 {
+    font-size: 1.1rem;
+    color: rgb(252, 146, 178);
+  }
+
+  #project footer a {
+    width: 20%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    clear: both;
+  }
+  #project footer a img {
+    width: 40%;
+    position: relative;
+    top: calc(50% - 30px);
+    animation: git infinite 0.7s;
+    animation-direction: alternate;
+    transition: all 0.5s;
+    transform: scale(1);
+  }
+  @keyframes git {
+    from {
+      transform: rotate(30deg);
+    }
+    to {
+      transform: rotate(-30deg);
+    }
+  }
+
+  footer a img:hover {
+    animation: none !important;
+    transform: scale(1.15) !important;
   }
 }
 
@@ -840,7 +903,9 @@ a {
 
   .App .sc4 {
     width: 100%;
+    height: auto;
     padding-top: 70px;
+    padding-bottom: 50px;
     box-sizing: border-box;
   }
 
@@ -1092,6 +1157,7 @@ a {
     width: 86%;
     margin: 0 auto;
     margin-top: 40px;
+    margin-bottom: 100px;
     /* background: rgba(128, 255, 0, 0.363); */
   }
   .sc4 #project #project_box .base {
@@ -1173,6 +1239,35 @@ a {
   #project_box button.slick-arrow::before {
     color: rgba(150, 207, 240, 0.342) !important;
   }
+
+  #project footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    box-shadow: 0 0 8px 4px rgba(204, 129, 233, 0.62);
+    display: flex;
+  }
+  #project footer h4 {
+    width: 78%;
+    font-size: 0.82rem;
+    line-height: 25px;
+  }
+  #project footer h4 .f0 {
+    display: inline;
+  }
+
+  #project footer h4 .f2 {
+    font-size: 0.95rem;
+  }
+
+  #project footer a {
+    width: 22%;
+    text-align: right;
+  }
+  #project footer a img {
+    width: 68%;
+  }
+
   /* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;

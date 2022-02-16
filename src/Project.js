@@ -52,7 +52,17 @@
               }                    
               {/* <Base />  컴포넌트로 돌릴경우 position 에러남. */}
             </Slider>    
-          </div>
+          </div>   
+          <footer>
+            <h4>
+               앞으로 다양한 스킬공부와 프로젝트 개발로 꾸준히 역량을 쌓아,
+               <span className='f0'>함께 공동의 목표를 이룰 수있는 인재가 되겠습니다.</span><br/>
+               <span className='f1'>저의 공부기록, 프로젝트들이 담길 <span className='f2'>소스코드저장소</span> 입니다.</span>                
+            </h4>
+            <a href='https://github.com/jinhee5577'>
+              <img src={github} alt="git"/>
+            </a>            
+          </footer> 
         </div>
      );     
  }
