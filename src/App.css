@@ -28,42 +28,44 @@ a {
   display: block;
   position: relative;
 }
-.chorong_box {
+/* .chorong_box {
   width: 100%;
   display: flex;
   position: fixed;
   top: 44.5%;
   z-index: 1151;
-}
+} */
 
-.chorong_box .chorong {
-  width: 16%;
+.chorong {
+  width: 90px;
   animation: infinite 1.4s R_L;
-  position: relative;
+  position: fixed;
+  top: 44.5%;
+  z-index: 1151;
   animation-direction: alternate;
   transition: cubic-bezier(0.99, 0.18, 0.17, 0.65) 0.9s;
   opacity: 0;
 }
 
-.chorong_box .chorong:nth-child(1) {
-  position: relative;
+.chorong:nth-child(1) {
+  position: fixed;
   left: 35%;
 }
-.chorong_box .chorong:nth-child(2) {
-  position: relative;
-  left: -35%;
+.chorong:nth-child(2) {
+  position: fixed;
+  right: 35%;
 }
-.chorong_box .rong2 {
+.rong2 {
   margin-left: auto;
 }
 
-.chorong_box .chorong img {
+.chorong img {
   width: 100%;
   position: relative;
   z-index: 153;
 }
 
-.chorong_box .chorong span {
+.chorong span {
   width: 30px;
   height: 26px;
   background: rgba(243, 243, 60, 0.651);
@@ -74,10 +76,10 @@ a {
   left: 15%;
 }
 
-.chorong_box .chorong:nth-child(1) span {
+.chorong:nth-child(1) span {
   left: 36%;
 }
-.chorong_box .chorong:nth-child(2) span {
+.chorong:nth-child(2) span {
   left: 18%;
 }
 @keyframes R_L {
@@ -89,7 +91,7 @@ a {
   }
 }
 
-@media all and (max-width: 1920px) {
+@media all and (max-width: 2000px) {
   .App {
     width: 100%;
   }
@@ -187,21 +189,21 @@ a {
       transform: scale(1);
     }
   }
-  .chorong_box .chorong {
+  .chorong {
     width: 7%;
   }
 
-  .chorong_box .chorong span {
+  .chorong span {
     width: 40px;
     height: 35px;
     top: 45%;
     left: 15%;
   }
 
-  .chorong_box .chorong:nth-child(1) span {
+  .chorong:nth-child(1) span {
     left: 42%;
   }
-  .chorong_box .chorong:nth-child(2) span {
+  .chorong:nth-child(2) span {
     left: 23%;
   }
 
@@ -223,6 +225,7 @@ a {
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
+    /* background: #96c8fb; */
   }
 
   .App .sc4 {
@@ -490,7 +493,7 @@ a {
     background: rgba(160, 154, 247, 0.062);
     position: absolute;
     top: -100%;
-    left: 28%;
+    left: 30%;
     transform: translateX(-50%);
     animation: 2s won_T infinite;
     box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.6);
@@ -658,9 +661,9 @@ a {
     clip-path: circle(90% at 50% 50%) !important;
   }
   #project_box .base .proimg_box {
-    width: 95%;
+    width: 97%;
     height: calc(100% - 60px);
-    background-size: 102.5%;
+    background-size: 100%;
     margin: 0 auto;
     /* background-color: aliceblue; */
     background-position: 50% 50%;
@@ -672,22 +675,17 @@ a {
   }
   #project #project_box .base2 .proimg_box {
     background-image: url(./aesset/main_p2.png);
-    background-size: 103.5%;
-    background-position: 50% 120%;
+    /* background-size: 103.5%; */
   }
   #project #project_box .base3 .proimg_box {
     background-image: url(./aesset/portmain2.png);
-    background-size: 100%;
-    background-position: 50% -60%;
   }
   #project #project_box .base4 .proimg_box {
     background-image: url(./aesset/portmain3.png);
-    background-size: 100%;
-    background-position: 50% -60%;
   }
   #project #project_box .base5 .proimg_box {
     background-image: url(./aesset/portmain4.png);
-    background-size: 102.5%;
+    /* background-size: 102.5%; */
     background-position: 50% 60%;
   }
 
@@ -728,8 +726,8 @@ a {
     position: relative;
     margin: 0 auto;
     top: 12%;
-    transition: all 0, 4s;
-    transform: rotateY(0);
+    /* transition: all 0, 4s;
+    transform: rotateY(0); */
   }
   .button_box li a span {
     width: 100%;
@@ -755,7 +753,7 @@ a {
     height: 28px;
   }
   #project_box button.slick-arrow {
-    z-index: 111588111111 !important;
+    z-index: 111588111 !important;
   }
   #project_box button.slick-arrow::before {
     color: rgba(150, 207, 240, 0.342) !important;
@@ -824,6 +822,132 @@ a {
   }
 }
 
+@media all and (min-width: 1450px) {
+  .App .sc1 h2 {
+    font-size: 2.4rem;
+  }
+  .App .sc1 header button {
+    width: 18%;
+    line-height: 50px;
+    font-size: 1.15rem;
+  }
+  .App .sc2 {
+    padding-top: 9%;
+    /* background: #96c8fb; */
+  }
+
+  .sc2 .profile article h4 {
+    font-size: 1.1rem;
+  }
+
+  .App .sc3 {
+    padding-top: 9%;
+  }
+  .App .sc4 {
+    width: 88%;
+    padding-top: 8%;
+    /* background: #57c78f41; */
+  }
+
+  .App .sc3 h1 {
+    font-size: 3rem;
+  }
+
+  .sc3 .skillbox::after {
+    left: 32%;
+    transform: translateX(-50%);
+  }
+
+  .App .sc4 #project .title {
+    font-size: 3rem;
+  }
+  .App .sc4 #project #project_box {
+    margin-top: 50px;
+  }
+
+  .sc4 #project #project_box .base {
+    width: 83% !important;
+    height: 420px;
+  }
+
+  #project_box .base .proimg_box {
+    width: 97%;
+    height: calc(100% - 65px);
+    background-size: 96%;
+    margin: 0 auto;
+  }
+  #project_box .base #explanation {
+    font-size: 0.97rem;
+    font-weight: 400;
+  }
+  #project_box .base #explanation span {
+    font-size: 1.15rem;
+    font-weight: 500 !important;
+  }
+
+  #project_box .base .button_box {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 0px;
+  }
+
+  #project_box .base .button_box li a {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+  }
+
+  .base .button_box li a img {
+    width: 21%;
+    top: 12%;
+  }
+  .button_box li a span {
+    margin-top: 10px;
+  }
+  #project footer h4 {
+    font-size: 1rem;
+  }
+
+  #project footer h4 .f2 {
+    font-size: 1.2rem;
+    color: rgb(252, 146, 178);
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .sc3 .skillbox::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(160, 154, 247, 0.062);
+    position: absolute;
+    top: -100%;
+    left: 34%;
+    transform: translateX(-50%);
+    animation: 2s won_T infinite;
+    box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.6);
+  }
+  .App .sc4 #project #project_box {
+    width: 79%;
+    margin-bottom: 130px;
+    /* background: rgba(128, 255, 0, 0.363); */
+  }
+
+  #project_box .base .proimg_box {
+    width: 97%;
+    background-size: 92%;
+    /* background-color: aliceblue; */
+  }
+
+  #project footer {
+    width: 72%;
+  }
+}
+
 @media all and (max-width: 600px) {
   .App {
     width: 100%;
@@ -864,23 +988,24 @@ a {
     color: rgb(238, 234, 234);
   }
 
-  .chorong_box {
+  /* .chorong_box {
     top: 48%;
     z-index: 1151;
-  }
-  .chorong_box .chorong {
-    width: 14%;
+  } */
+  .chorong {
+    top: 48%;
+    width: 15%;
   }
 
-  .chorong_box .chorong span {
+  .chorong span {
     width: 22px;
     height: 15px;
   }
 
-  .chorong_box .chorong:nth-child(1) span {
+  .chorong:nth-child(1) span {
     left: 35.5%;
   }
-  .chorong_box .chorong:nth-child(2) span {
+  .chorong:nth-child(2) span {
     left: 18%;
   }
 
@@ -1175,16 +1300,18 @@ a {
   }
 
   #project_box .base .proimg_box {
-    width: 96%;
-    background-size: 105%;
+    width: 97%;
+    background-size: 100%;
     /* background-color: aliceblue; */
     background-position: 50% 50%;
   }
-
+  #project #project_box .base1 .proimg_box {
+    background-size: 102%;
+  }
   #project #project_box .base2 .proimg_box {
     background-image: url(./aesset/main_p2.png);
-    background-size: 102%;
-    background-position: 50% 35%;
+    /* background-size: 102%; */
+    background-position: 50% 45%;
   }
   #project #project_box .base3 .proimg_box {
     background-position: 50% 50%;
@@ -1234,7 +1361,7 @@ a {
     height: 28px;
   }
   #project_box button.slick-arrow {
-    z-index: 111588111111 !important;
+    z-index: 111588111 !important;
   }
   #project_box button.slick-arrow::before {
     color: rgba(150, 207, 240, 0.342) !important;

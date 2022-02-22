@@ -16,13 +16,15 @@
 
 function App() { 
 
-  useEffect( () => {     
+  useEffect( () => {       
         let chorong = document.querySelectorAll('.chorong');
-        let blackmoon = setTimeout(() => {        
-            chorong[0].style.left = 0;
-            chorong[1].style.left = 0;
-            chorong.forEach( (item) => { item.style.opacity = 1; } );
-          }, 270);           
+        let blackmoon = setTimeout(() => { 
+            chorong[0].style.left = 0;    
+            chorong[1].style.right = 0;    
+            chorong.forEach( (item) => { 
+                item.style.opacity = 1;          
+                });
+            }, 270);           
 
         return () => { clearTimeout(blackmoon); }
     }, [] );
@@ -43,15 +45,16 @@ function App() {
                 e.preventDefault();
                 sc_num = Number(e.target.getAttribute('num'));                    
                 scoffset = section[sc_num].offsetTop;
-                if(media_600.matches){      
-                    if(sc_num >= 2){
-                      window.scrollTo({top : scoffset, behavior:'smooth'});               
-                    } else {
-                        window.scrollTo({top : scoffset, behavior:'smooth'});
-                    }                   
-                } else {
-                    window.scrollTo({top : scoffset, behavior:'smooth'});
-                }                           
+                // if(media_600.matches){      
+                //     if(sc_num >= 2){
+                //       window.scrollTo({top : scoffset, behavior:'smooth'});               
+                //     } else {
+                //         window.scrollTo({top : scoffset, behavior:'smooth'});
+                //     }                   
+                // } else {
+                //     window.scrollTo({top : scoffset, behavior:'smooth'});
+                // }   
+                window.scrollTo({top : scoffset, behavior:'smooth'});                        
                 change_button();
                 setTimeout(loadaction, 450);        
           });
@@ -113,11 +116,10 @@ function App() {
                 });
               onbutton[sc_num].classList.add('click');                
           }
-     });
+     }, []);
 
   return (
-    <div className="App">   
-      <div className='chorong_box'> 
+    <div className="App">        
         <div className="chorong">
           <img src={chorong2} alt="청사초롱"/>
           <span></span>
@@ -125,8 +127,7 @@ function App() {
         <div className="chorong rong2">
           <img src={chorong} alt="청사초롱"/>
           <span></span>
-        </div> 
-      </div>          
+        </div>         
       <section className='sc sc1'>
         <header>         
              <button num='0'>HOME</button>
@@ -173,7 +174,7 @@ function App() {
                 <h5>UI/UX 웹디자인 개발자 과정 수료</h5>         
                 <h5>목포한양직업전문학교</h5> 
               </div>        
-             </div>  
+             </div>       
              <History date={['2020. 11', '2021. 03']} school='워너비체인소프트'/>
           </aside>
         </div>
