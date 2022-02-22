@@ -854,7 +854,7 @@ a {
   }
 
   .sc3 .skillbox::after {
-    left: 32%;
+    left: 30.5%;
     transform: translateX(-50%);
   }
 
@@ -917,19 +917,8 @@ a {
 
 @media all and (min-width: 1600px) {
   .sc3 .skillbox::after {
-    content: "";
-    display: block;
-    clear: both;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: rgba(160, 154, 247, 0.062);
-    position: absolute;
     top: -100%;
     left: 34%;
-    transform: translateX(-50%);
-    animation: 2s won_T infinite;
-    box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.6);
   }
   .App .sc4 #project #project_box {
     width: 79%;
