@@ -135,7 +135,7 @@ function App() {
              <button num='2'>SKILLS</button>
              <button num='3'>PROJECT</button>       
         </header>
-        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드개발, 웹퍼블리셔를 지원하는 오진희 입니다.</h2>     
+        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드개발 을 지원하는 오진희 입니다.</h2>     
       </section>
       <section className='sc sc2'>
         <div className='profile'>

@@ -165,7 +165,7 @@ a {
     position: relative;
     top: 45%;
     transform: translateY(-50%);
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-family: "Jua", sans-serif;
     font-weight: normal;
     text-align: center;
@@ -827,7 +827,7 @@ a {
 
 @media all and (min-width: 1450px) {
   .App .sc1 h2 {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
   }
   .App .sc1 header button {
     width: 18%;
@@ -972,7 +972,7 @@ a {
   .App .sc1 h2 {
     width: 82% !important;
     top: 40%;
-    font-size: 1.78rem;
+    font-size: 1.79rem;
     line-height: 38px;
     font-family: "Jua", sans-serif;
     font-weight: normal;
@@ -1105,7 +1105,7 @@ a {
   .sc2 .profile article h4 {
     color: rgb(234, 242, 247);
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 30px;
     font-family: "Sunflower", sans-serif;
   }
