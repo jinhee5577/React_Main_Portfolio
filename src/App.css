@@ -91,7 +91,7 @@ a {
   }
 }
 
-@media all and (max-width: 2000px) {
+@media all and (max-width: 4000px) {
   .App {
     width: 100%;
   }
