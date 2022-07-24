@@ -681,12 +681,15 @@ a {
     background-image: url(./aesset/portmain2.png);
   }
   #project #project_box .base4 .proimg_box {
-    background-image: url(./aesset/portmain6.png);
+    background-image: url(./aesset/portmain7.png);
   }
   #project #project_box .base5 .proimg_box {
-    background-image: url(./aesset/portmain3.png);
+    background-image: url(./aesset/portmain6.png);
   }
   #project #project_box .base6 .proimg_box {
+    background-image: url(./aesset/portmain3.png);
+  }
+  #project #project_box .base7 .proimg_box {
     background-image: url(./aesset/portmain4.png);
     /* background-size: 102.5%; */
     background-position: 50% 60%;
