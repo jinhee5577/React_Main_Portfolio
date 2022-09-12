@@ -10,9 +10,9 @@
  import jquery_img from './aesset/jquery_img.gif';
  import boot_img from './aesset/boot_img.png';
  import Project from './Project.js';
-
 //  import { Link, Route, Routes, } from 'react-router-dom';
  import './App.css';
+ 
 
 function App() { 
 
@@ -23,8 +23,8 @@ function App() {
             chorong[1].style.right = 0;    
             chorong.forEach( (item) => { 
                 item.style.opacity = 1;          
-                });
-            }, 270);           
+            });
+        }, 270);           
 
         return () => { clearTimeout(blackmoon); }
     }, [] );
@@ -78,9 +78,9 @@ function App() {
                       if(window.pageYOffset > section[1].offsetTop + 600){  
                             certificate.classList.add('acti_602');
                       }
-                    } else {        
-                        setTimeout(loadaction, 450); 
-                    }      
+                  } else {        
+                      setTimeout(loadaction, 450); 
+                  }      
               }
               if(window.pageYOffset > section[2].offsetTop - 100){  
                   history.classList.remove('acti_600');        
@@ -105,7 +105,7 @@ function App() {
 
           });
 
-          function loadaction(){
+          function loadaction (){
               section.forEach((sc) => { sc.classList.remove('active'); });
               section[sc_num].classList.add('active');
           }
@@ -118,6 +118,7 @@ function App() {
           }
      }, []);
 
+     
   return (
     <div className="App">        
         <div className="chorong">
@@ -135,7 +136,7 @@ function App() {
              <button num='2'>SKILLS</button>
              <button num='3'>PROJECT</button>       
         </header>
-        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드개발 을 지원하는 오진희 입니다.</h2>     
+        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드, UI 개발 을 지원하는 오진희 입니다.</h2>     
       </section>
       <section className='sc sc2'>
         <div className='profile'>
