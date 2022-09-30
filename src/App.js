@@ -2,6 +2,7 @@
  import React, { Component, useEffect, useState, useRef, } from 'react';
  import chorong from './aesset/chorong.png';
  import chorong2 from './aesset/chorong2.png';
+ import music from './aesset/zaurim2521.mp3';
  import react_img from './aesset/react_img.png';
  import redux_img from './aesset/redux2.png';
  import js_img from './aesset/js_img.png';
@@ -15,6 +16,9 @@
  
 
 function App() { 
+  let appRef = useRef();
+  let audio = new Audio(music);  // import 해서 가져와야한다.
+  audio.loop = true;
 
   useEffect( () => {       
         let chorong = document.querySelectorAll('.chorong');
@@ -118,9 +122,50 @@ function App() {
           }
      }, []);
 
+
+     let flower = () => { 
+        let colors = ["#478ae2", "#cef38aaf"];
+        let numBalls = 30;
+        let balls = [];
+    
+        for (let i = 0; i < numBalls; i++) {
+            let ball = document.createElement("div");
+            ball.classList.add("ball");
+            ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+            ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+            ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+            ball.style.transform = `scale(${Math.random()})`;
+            ball.style.width = `${Math.random() / 1.7}em`;
+            ball.style.height = ball.style.width;     
+        
+            balls.push(ball);
+            appRef.current.append(ball);
+        }
+    
+          // Keyframes
+          balls.forEach((el, i, ra) => {
+              let to = {
+                          x: Math.random() * (i % 2 === 0 ? -20 : 20),
+                          y: Math.random() * 30,
+                          z: Math.random() * (-70)
+                      };
+    
+              let anim = el.animate(
+                [{ transform: "translate3d(0, 0, 0)", opacity: 0.7},
+                { transform: `translate3d(${to.x}rem, ${to.y}rem, ${to.z}rem)`, opacity: 0 }],
+                  {
+                    duration: (Math.random() + 1) * 2500, // random duration
+                    // direction: "alternate",
+                    fill: "both",
+                    iterations: Infinity,
+                    easing: "ease-in-out"
+                  }
+              );                  
+          });              
+    }; 
      
   return (
-    <div className="App">        
+    <div className="App" ref={appRef}>        
         <div className="chorong">
           <img src={chorong2} alt="청사초롱"/>
           <span></span>
@@ -136,7 +181,11 @@ function App() {
              <button num='2'>SKILLS</button>
              <button num='3'>PROJECT</button>       
         </header>
-        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드, UI 개발 을 지원하는 오진희 입니다.</h2>     
+        <h2 className='title'>
+          저는 상상을 현실로 만드는 프론트엔드, UI 개발 을 지원하는 오진희 입니다.
+          <button onClick={() => { audio.play(); flower(); }} style={{width : '60px', height : '35px'}}>play</button>
+          <button onClick={() => { audio.pause(); }} style={{width : '60px', height : '35px'}}>stop</button> 
+        </h2>            
       </section>
       <section className='sc sc2'>
         <div className='profile'>

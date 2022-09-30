@@ -36,6 +36,14 @@ a {
   z-index: 1151;
 } */
 
+.ball {
+  position: fixed;
+  border-radius: 100%;
+  opacity: 0.7;
+  box-shadow: 0 0 10px 2.6px rgba(240, 240, 151, 0.507); 
+  transition: all .4s !important; 
+}
+
 .chorong {
   width: 90px;
   animation: infinite 1.4s R_L;
