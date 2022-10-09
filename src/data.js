@@ -22,10 +22,12 @@ export default [
                homelink : 'https://jinhee5577.github.io/reactJH/'        
             },
             {  id : 3,
-               explanation : <p><br/> <span>React</span>로 개발된 <span>저의 메인 포토폴리오</span> 웹사이트 입니다.<br/>
+               explanation : <p><span>React</span>로 개발된 <span>저의 메인 포토폴리오</span> 웹사이트 입니다.<br/>
                              PC와 모바일에서 보기 적합하도록 <span>반응형 웹사이트</span>로 제작하였습니다.<br/><br/>
                              저를 소개하는 포토폴리오 인만큼 좀더 근사하고, 다양한 <span>animation</span>과 <span>인터렉티브</span>한 웹페이지로 
-                             제작하기 위해<span>CSS</span>와 <span>Javascript</span>로 직접 개발하였습니다. </p>,
+                             제작하기 위해<span>CSS</span>와 <span>Javascript</span>로 직접 개발하였습니다.<br/> 
+                             추가로 <span>play버튼</span>을 클릭시 <span>음악재생</span>과 함께 랜덤한 <span>아름다운 별빛</span>이 
+                             함께 쏟아지도록 개발하였습니다.</p>,
                gitlink : 'https://github.com/jinhee5577/Main_Portfolio/tree/master/src',     
                homelink : 'https://jinhee5577.github.io/Jinhee_PF/'         
             },
