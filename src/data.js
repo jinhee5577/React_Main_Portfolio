@@ -49,13 +49,13 @@ export default [
                homelink : 'https://jinhee5577.github.io/YANADO/'        
             },
             {  id : 6,
-               explanation : <p><span>NAUM_mall</span> 리뉴얼 프로젝트는 제가 회사에서 마지막으로 담당한 쇼핑몰 리뉴얼 프로젝트 입니다.<br/><br/>
-                              목포에서 만큼은 가장 세련된 쇼핑몰 사이트 가 나올수있도록 대표 메이저 백화점 사이트를 참고하였습니다.<br/> 
-                              웹,모바일 버전의 각각의 메인 페이지부터 서브페이지까지 <span>디자인과 퍼블리싱 작업</span>을 담당했습니다.<br/><br/>                                                         
-                              이결과물은 <span>모바일버전</span> 용으로 따로 제작되어, 제가 그간 퍼블리싱한 작업들을 백업해서 제 github주소로 업로드한 사이트 입니다. 
+               explanation : <p><span>JINI3D</span> 프로젝트는 새로운시도로 웹메인페이지 내용을 <span>3D</span>로 구현하여 창의적이며 입체적인 UX를 선보이기위해 현재도 계속 개발진행중인 프로젝트입니다.<br/><br/>
+                              <span>3D구현</span>은 라이브러리를 전혀 이용하지않고, <span>React</span>와 순수<span>Javascript, CSS</span>를 이용하여 입체적인 메인페이지를 개발 완성했습니다.<br/> 
+                              또한 간단한 프로필페이지에서 선택한 이미지와,이름을 <span>Localstorage</span>에 영구적으로 저정하고 불러오며 회원처럼 보여줍니다.<br/><br/>                                                         
+                              <span>아파트매매가</span>조회는 프로필을 저장한 고객만 보이며, 데이터는 <span>국토교통부api</span>를 각지역 옵션창에서 선택한 지역을 해당법정동코드list에서 지역코드를 찾은후 해당지역 아파트매매정보를 요청합니다.
                              </p>,
-               gitlink : 'https://github.com/jinhee5577/jinhee5577.github.io',     
-               homelink : 'https://jinhee5577.github.io/A이걸봐주세요_naum_moblie.html'        
+               gitlink : 'https://github.com/jinhee5577/JINI3D',     
+               homelink : 'https://jinipro-a2903.web.app/'        
             },
             {  id : 7,
                explanation : <p><br/><span>SoundBean 카페</span> 프로젝트는 제가 회사에서 디자인과 퍼블리싱을 담당한 프로젝트중 마음에 드는 결과물중 하나 입니다.<br/><br/> 
