@@ -984,16 +984,55 @@ a {
 
 @media all and (max-width: 1060px) {
 
+  .App .sc2 {
+    height: auto;
+    justify-content: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+
   .App .sc2 .profile {
     width: 85%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
+  } 
+  
+  .App .sc2 .history {
+    width: 44%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .App .sc2 .certificate {
+    width: 44%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
   }  
 
   .App .sc2 .profile article {
     width: 88%;
     margin-left: 40px;
+    margin-top: 30px;
+  }  
+
+  .sc2 .history aside {
+    width: 90%;
+    margin-left: 38px;
+    margin-top: 40px;
+    font-size: 1.3rem;
+  }  
+
+  .history aside .timeline h4 {
+    font-size: 1.1rem;
+  }  
+
+  .sc2 .certificate aside {
+    width: 90%;
+    margin-left: 38px;
+    font-size: 1.3rem;
   }  
 
 
@@ -1095,7 +1134,6 @@ a {
     height: auto;
     padding: 0 10px;
     padding-top: 70px;
-    margin-top: 1020px;
     /* background: #22436d; */
     box-sizing: border-box;
   }
@@ -1111,6 +1149,7 @@ a {
   .App .sc2 .profile {
     width: 100%;
     height: auto;
+    margin: 0;
     padding-bottom: 75px;
     box-sizing: border-box;
     transition: cubic-bezier(0.33, 0.77, 0, 0.36) 0.5s;
@@ -1194,6 +1233,7 @@ a {
   .App .sc2 .certificate {
     width: 100%;
     height: auto;
+    padding: 0;
     padding-bottom: 75px;
     box-sizing: border-box;
     /* background: rgba(216, 170, 170, 0.26); */
@@ -1202,15 +1242,16 @@ a {
   .App .sc2 .history {
     width: 100%;
     height: auto;
+    padding: 0;
     padding-bottom: 75px;
     box-sizing: border-box;
-    /* background: rgba(255, 140, 0, 0.151); */
   }
 
   .sc2 .history aside {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    margin: 0;
     margin-top: 45px;
     font-weight: 100;
     font-size: 1.3rem;
@@ -1254,6 +1295,7 @@ a {
 
   .sc2 .certificate aside {
     width: 100%;
+    margin: 0;
     margin-top: 45px;
     font-size: 1.45rem;
     line-height: 30px;
