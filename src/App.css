@@ -254,6 +254,7 @@ a {
     margin: 0 auto;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -531,31 +532,33 @@ a {
     border-radius: 50%;
     background: rgba(160, 154, 247, 0.062);
     position: absolute;
-    top: -100%;
-    left: 30%;
+    top: -85%;
+    left: 50%;
     transform: translateX(-50%);
+    transform-origin: 50% 50%;
     animation: 2s won_T infinite;
     box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.6);
   }
   @keyframes won_T {
     0% {
       opacity: 0.1;
-      transform: scale(0.2);
+      transform: translateX(-50%) scale(0.2);
       /* box-shadow: 0 0 0 0 rgba(213, 112, 238, 0.5); */
     }
 
     70% {
       opacity: 0.7;
-      transform: scale(1.6);
+      transform: translateX(-50%) scale(1.6);
       box-shadow: 0 0 10px 120px rgba(112, 135, 238, 0);
     }
 
     100% {
       opacity: 0;
-      transform: scale(0.2);
+      transform: translateX(-50%) scale(0.2);
       box-shadow: 0 0 0 0 rgba(112, 135, 238, 0);
     }
   }
+  
   .App .sc3 .skillbox ul {
     width: 100%;
     display: flex;
@@ -710,23 +713,23 @@ a {
   }
 
   #project #project_box .base1 .proimg_box {
-    background-image: url(./aesset/main_p.png);
+    background-image: url(./aesset/portmain1.png);
   }
   #project #project_box .base2 .proimg_box {
-    background-image: url(./aesset/main_p2.png);
+    background-image: url(./aesset/main_p.png);
     /* background-size: 103.5%; */
   }
   #project #project_box .base3 .proimg_box {
-    background-image: url(./aesset/portmain2.png);
+    background-image: url(./aesset/main_p2.png);
   }
   #project #project_box .base4 .proimg_box {
-    background-image: url(./aesset/portmain7.png);
+    background-image: url(./aesset/portmain2.png);
   }
   #project #project_box .base5 .proimg_box {
-    background-image: url(./aesset/portmain6.png);
+    background-image: url(./aesset/portmain7.png);
   }
   #project #project_box .base6 .proimg_box {
-    background-image: url(./aesset/portmain3.png);
+    background-image: url(./aesset/portmain6.png);
   }
   #project #project_box .base7 .proimg_box {
     background-image: url(./aesset/portmain4.png);
@@ -899,7 +902,6 @@ a {
   }
 
   .sc3 .skillbox::after {
-    left: 30.5%;
     transform: translateX(-50%);
   }
 
@@ -961,10 +963,7 @@ a {
 }
 
 @media all and (min-width: 1600px) {
-  .sc3 .skillbox::after {
-    top: -100%;
-    left: 34%;
-  }
+
   .App .sc4 #project #project_box {
     width: 79%;
     margin-bottom: 130px;
@@ -981,6 +980,25 @@ a {
     width: 72%;
   }
 }
+
+
+@media all and (max-width: 1060px) {
+
+  .App .sc2 .profile {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }  
+
+  .App .sc2 .profile article {
+    width: 88%;
+    margin-left: 40px;
+  }  
+
+
+}
+
 
 @media all and (max-width: 600px) {
   .App {
@@ -1290,19 +1308,7 @@ a {
     position: relative;
   }
   .sc3 .skillbox::after {
-    content: "";
-    display: block;
-    clear: both;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: rgba(160, 154, 247, 0.062);
-    position: absolute;
-    top: -15%;
-    left: -23%;
-    transform: translateX(-50%);
-    animation: 2s won_T infinite;
-    box-shadow: 0 0 10px 0px rgba(112, 135, 238, 0.5);
+    top: -7%;
   }
 
   .App .sc3 .skillbox ul li {
@@ -1364,16 +1370,8 @@ a {
   #project #project_box .base1 .proimg_box {
     background-size: 102%;
   }
-  #project #project_box .base2 .proimg_box {
-    background-image: url(./aesset/main_p2.png);
-    /* background-size: 102%; */
-    background-position: 50% 45%;
-  }
   #project #project_box .base3 .proimg_box {
     background-position: 50% 50%;
-  }
-  #project #project_box .base4 .proimg_box {
-    background-size: 106%;
   }
 
   #project_box .base .button_box {
