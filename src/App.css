@@ -984,11 +984,28 @@ a {
 
 @media all and (max-width: 1060px) {
 
+  .App .sc1 h2 {
+    top: 39%;
+    font-size: 2.1rem;
+  }
+
+  .App .sc1 .music_box {
+    top: 44%;
+  }
+
+  .App .sc1 .music_box button {
+    height: 41px;
+  }
+
   .App .sc2 {
     height: auto;
     justify-content: center;
     padding-bottom: 50px;
     box-sizing: border-box;
+  }
+
+  .App .sc3 {
+    padding: 90px 0;
   }
 
   .App .sc2 .profile {
@@ -1033,10 +1050,25 @@ a {
     width: 90%;
     margin-left: 38px;
     font-size: 1.3rem;
+  }
+  
+  .sc3 .skillbox::after {
+    top: -29%;
+  }
+
+  .App .sc3 .skillbox ul {
+   justify-content: center;
+  }
+
+  .App .sc3 .skillbox ul li {
+    width: 23%;
   }  
 
-
+  /* .App .sc3 .skillbox ul li:last-child {
+    align-self: stretch;
+  } */
 }
+
 
 
 @media all and (max-width: 600px) {
@@ -1132,8 +1164,7 @@ a {
   .App .sc3 {
     width: 100%;
     height: auto;
-    padding: 0 10px;
-    padding-top: 70px;
+    padding: 70px 10px;
     /* background: #22436d; */
     box-sizing: border-box;
   }
@@ -1351,6 +1382,10 @@ a {
   }
   .sc3 .skillbox::after {
     top: -7%;
+  }
+
+  .App .sc3 .skillbox ul {
+    justify-content: space-between;
   }
 
   .App .sc3 .skillbox ul li {
