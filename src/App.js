@@ -8,6 +8,7 @@
  import js_img from './aesset/js_img.png';
  import html_img from './aesset/html_img.png';
  import css_img from './aesset/css_img.png';
+ import ajax_img from './aesset/Ajax.png';
  import jquery_img from './aesset/jquery_img.gif';
  import boot_img from './aesset/boot_img.png';
  import Project from './Project.js';
@@ -253,12 +254,13 @@ function App() {
         <h1 className='title'>SKILLS</h1>
         <div className='skillbox'>
           <ul>
-            <Skills img={react_img} number={90} name='React'/>
+            <Skills img={react_img} number={95} name='React'/>
             <Skills img={redux_img} number={85} name='Redux'/>
             <Skills img={js_img} number={95} name='Javascript'/>
             <Skills img={html_img} number={95} name='HTML5'/>
             <Skills img={css_img} number={95} name='CSS3'/>
             <Skills img={jquery_img} number={90} name='Jquery'/>
+            <Skills img={ajax_img} number={90} name='Ajax'/>
             <Skills img={boot_img} number={80} name='Bootstap'/>
           </ul>
         </div>     
@@ -297,9 +299,11 @@ function Certificate(props){
 function Skills(props){
     return(
         <li>
-          <img src={props.img} alt="1"/>
-          <h2>{props.number}%</h2>
-          <h5>{props.name}</h5>
+          <div className='inside'>
+            <img src={props.img} alt="1"/>
+            <h2>{props.number}%</h2>
+            <h5>{props.name}</h5>
+          </div>
         </li> 
     );
 }

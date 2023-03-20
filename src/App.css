@@ -567,7 +567,7 @@ a {
   }
 
   .App .sc3 .skillbox ul li {
-    width: 14%;
+    width: 12%;
     height: auto;
     padding: 15px 0;
     box-sizing: border-box;
@@ -593,7 +593,7 @@ a {
   }
 
   .sc3 .skillbox ul li img {
-    width: 30%;
+    width: 31%;
     margin-bottom: 25px;
     animation: moving 0.6s infinite ease-in-out;
     animation-direction: alternate;
@@ -1053,16 +1053,22 @@ a {
   }
   
   .sc3 .skillbox::after {
-    top: -29%;
+    top: -26%;
   }
 
   .App .sc3 .skillbox ul {
-   justify-content: center;
+   justify-content: space-around;
   }
 
   .App .sc3 .skillbox ul li {
     width: 23%;
+    margin-bottom: 40px;
   }  
+
+  .sc3 .skillbox ul li img {
+    width: 28%;
+  }  
+
 
   /* .App .sc3 .skillbox ul li:last-child {
     align-self: stretch;
@@ -1385,16 +1391,16 @@ a {
   }
 
   .App .sc3 .skillbox ul {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .App .sc3 .skillbox ul li {
-    width: 29%;
+    width: 33.3333%;
     margin-bottom: 25px;
   }
 
   .sc3 .skillbox ul li img {
-    width: 49%;
+    width: 45%;
     margin-bottom: 20px;
   }
 
