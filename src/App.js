@@ -255,7 +255,7 @@ function App() {
         <div className='skillbox'>
           <ul>
             <Skills img={react_img} number={95} name='React'/>
-            <Skills img={redux_img} number={85} name='Redux'/>
+            <Skills img={redux_img} number={90} name='Redux'/>
             <Skills img={js_img} number={95} name='Javascript'/>
             <Skills img={html_img} number={95} name='HTML5'/>
             <Skills img={css_img} number={95} name='CSS3'/>

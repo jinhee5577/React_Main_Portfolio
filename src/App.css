@@ -1069,6 +1069,9 @@ a {
     width: 28%;
   }  
 
+  .App .sc4 #project #project_box {
+    width: 89%;
+  }  
 
   /* .App .sc3 .skillbox ul li:last-child {
     align-self: stretch;
@@ -1396,7 +1399,12 @@ a {
 
   .App .sc3 .skillbox ul li {
     width: 33.3333%;
+    padding: 15px 6px;
     margin-bottom: 25px;
+  }
+
+  .App .sc3 .skillbox ul li .inside {
+    width: 100%;
   }
 
   .sc3 .skillbox ul li img {
