@@ -232,6 +232,7 @@ function App() {
               </div>        
              </div>       
              <History date={['2020. 11', '2021. 03']} school='워너비체인소프트'/>
+             <History date={['2023. 09', '2026. 08']} school='방송통신대학교 컴퓨터과학과 2학년 편입'/>
           </aside>
         </div>
         <div className='certificate'>
@@ -279,8 +280,8 @@ function History(props){
           <div className='contbox'>
             <h4>{props.date[0]} ~ {props.date[1]}</h4> 
             <h5>{props.school}</h5> 
-          </div>        
-        </div>     
+          </div>
+        </div>
   );
 }
 

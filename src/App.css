@@ -412,6 +412,9 @@ a {
   .sc2.active .history aside .timeline:nth-child(4) {
     animation-delay: 0.7s;
   }
+  .sc2.active .history aside .timeline:nth-child(5) {
+    animation-delay: 0.9s;
+  }
 
   .sc2 aside .timeline span {
     display: block;
