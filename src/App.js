@@ -6,11 +6,15 @@
  import react_img from './aesset/react_img.png';
  import redux_img from './aesset/redux2.png';
  import js_img from './aesset/js_img.png';
+ import java_img from './aesset/javaimg.png';
  import html_img from './aesset/html_img.png';
+ import spring_img from './aesset/spring_img.png';
  import css_img from './aesset/css_img.png';
  import ajax_img from './aesset/Ajax.png';
- import jquery_img from './aesset/jquery_img.gif';
- import boot_img from './aesset/boot_img.png';
+ import python_img from './aesset/python_img.png';
+ import jsp_servlet from './aesset/jsp_servlet.png';
+ import oracle_img from './aesset/oracle_img.png';
+ import expressjs_img from './aesset/expressjs_img.png';
  import Project from './Project.js';
 //  import { Link, Route, Routes, } from 'react-router-dom';
  import './App.css';
@@ -182,7 +186,7 @@ function App() {
              <button num='2'>SKILLS</button>
              <button num='3'>PROJECT</button>       
         </header>
-        <h2 className='title'>저는 상상을 현실로 만드는 프론트엔드, UI 개발 을 지원하는 오진희 입니다.</h2> 
+        <h2 className='title'>좋은 로직에 미쳐 앞으로 더욱더 높은 퀄리티의 아웃풋을 내고 싶은 프론트엔드, 백엔드개발을 지원하는 오진희 입니다.</h2> 
         <div className='music_box'>
           <button onClick={() => { audio.play(); flower(); }}>play</button>
           <button onClick={() => { audio.pause(); }} >stop</button> 
@@ -197,19 +201,16 @@ function App() {
            <span className='l4'></span>
           </div>
           <article>
-            <h4>안녕하십니까. 프론트엔드에서 저의 모든 상상과 역량, 목표를
-                현실로 만들어 나가는 오진희 입니다!. <br/>코드를 이용해 상상을 
-                더욱더 구체적으로 그려 내기위해 항상 끊임없이 고민하고 공부하며 노력합니다.
-                제가 그동안 쌓아온 역량을 가장자신있게 잘할수있는 UI개발을 
-                기반으로, 꾸준히 javascript를 더욱더 탄탄히 다졌으며, 
-                React와 Redux를 이용한 여러 기능개발 들과 애니메이션등을 직접 
-                javascript로 구현한 개인프로젝트 개발을 통하여 React개발 경험과 
-                역량을 향상시켜 왔습니다.<br/><br/>
-               
-                저의 강점인 목표를 향한 끈기있는 열정과 집요한노력 덕분에 
-                오늘날까지 성장할수 있었습니다.<br/>
-                프론트에서 아름답고 놀라운 경험을 선물하기위해 최선의 방법을 함께 모색하는, 
-                공동의 목표를 함께 이룰수있는 인재 입니다.              
+            <h4>안녕하십니까.🫰 작은 성공들을 계속 이루어가는 몰두형 인재 프론트엔드,백엔드 모두 개발구현 가능한 개발자 오진희 입니다!.<br/>
+            이전의 저는 React를 활용하여 머리속의 상상을 현실로 구현하며 희열과 즐거움에 신나게 개발해오던 프론트엔드개발자에서
+            현재는 빅테이터분석 개발자 과정을 수료하며 백엔드 기술스택까지 확장해 Spring, Servlet을 활용하여
+            서버와 백엔드 영역까지 개발 가능한 풀스택 개발자로 역량을 향상시켜 또한번 레벨업을 성공 하였습니다.<br/>
+            ⚡무엇보다 하나에 빠지면 그분야를 끝까지 파버리는 몰두형 사람이라 현재는 java와 javascript, 좋은 로직에
+            미쳐 앞으로 더욱더 높은 퀄리티의 아웃풋을 만들어 내고 싶습니다.<br/><br/>
+             
+            현재까지 축적해온 저의 모든 역량, 경험 노하우를 적극 활용하여 팀원들과 함께 빠르게 융화 되어, 
+            성공적인 성과를 함께 이룰 수 있는 SW개발자로 이바지 하고자 지원 하였습니다.<br/>
+            제 분야에서 역량을 발휘할 준비가 되어 있고 자신 있습니다.
             </h4>            
           </article>
         </div>
@@ -222,7 +223,7 @@ function App() {
           </div>
           <aside>
              <History date={['2007. 03', '2010. 02']} school='목포정명여자고등학교 졸업'/>
-             <History date={['2010. 03', '2011. 12']} school='초당대학교 치위생학과 자퇴'/>
+             {/* <History date={['2010. 03', '2011. 12']} school='초당대학교 치위생학과 자퇴'/> */}
              <div className='timeline'>
               <span></span>
               <div className='contbox'>
@@ -233,6 +234,7 @@ function App() {
              </div>       
              <History date={['2020. 11', '2021. 03']} school='워너비체인소프트'/>
              <History date={['2023. 09', '2026. 08']} school='방송통신대학교 컴퓨터과학과 2학년 편입'/>
+             <History date={['2023. 12', '2024. 06']} school='빅데이터 분석서비스 개발자과정 수료'/>
           </aside>
         </div>
         <div className='certificate'>
@@ -247,7 +249,7 @@ function App() {
             <Certificate data='2020. 10' license='컴퓨터그래픽스운용기능사'/>          
             <Certificate data='2020. 08' license='GTQ 1급'/>          
             <Certificate data='2020. 06' license='(국가공인)디지털정보활용능력'/>                     
-            <Certificate data='2011. 11' license='간호조무사'/>       
+            {/* <Certificate data='2011. 11' license='간호조무사'/>        */}
           </aside>            
         </div>        
       </section>
@@ -255,14 +257,17 @@ function App() {
         <h1 className='title'>SKILLS</h1>
         <div className='skillbox'>
           <ul>
-            <Skills img={react_img} number={95} name='React'/>
-            <Skills img={redux_img} number={90} name='Redux'/>
-            <Skills img={js_img} number={95} name='Javascript'/>
-            <Skills img={html_img} number={95} name='HTML5'/>
-            <Skills img={css_img} number={95} name='CSS3'/>
-            <Skills img={jquery_img} number={90} name='Jquery'/>
-            <Skills img={ajax_img} number={90} name='Ajax'/>
-            <Skills img={boot_img} number={80} name='Bootstap'/>
+            <Skills img={react_img} number={97} name='React'/>
+            <Skills img={redux_img} number={95} name='Redux'/>
+            <Skills img={js_img} number={97} name='Javascript'/>
+            <Skills img={java_img} number={95} name='JAVA'/>
+            <Skills img={spring_img} number={95} name='Spring'/>
+            <Skills img={jsp_servlet} number={95} name='JSP&Servlet'/>
+            <Skills img={oracle_img} number={92} name='OracleDB'/>
+            <Skills img={html_img} number={97} name='HTML5'/>
+            <Skills img={css_img} number={97} name='CSS3'/> 
+            <Skills img={expressjs_img} number={93} name='Express.js'/> 
+            <Skills img={python_img} number={90} name='Python'/>             
           </ul>
         </div>     
       </section>

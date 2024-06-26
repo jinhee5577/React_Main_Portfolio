@@ -535,7 +535,7 @@ a {
     border-radius: 50%;
     background: rgba(160, 154, 247, 0.062);
     position: absolute;
-    top: -85%;
+    top: -45%;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: 50% 50%;
@@ -566,7 +566,9 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    padding: 0px 20px;
+     box-sizing: border-box;
   }
 
   .App .sc3 .skillbox ul li {
@@ -575,6 +577,7 @@ a {
     padding: 15px 0;
     box-sizing: border-box;
     text-align: center;
+    margin: 0 18px;
     margin-bottom: 30px;
     color: rgb(221, 235, 247);
     font-family: "Sunflower", sans-serif;
@@ -601,6 +604,18 @@ a {
     animation: moving 0.6s infinite ease-in-out;
     animation-direction: alternate;
   }
+
+  .sc3 .skillbox ul li:nth-child(4) img{
+    width: 32%;
+  }
+  .sc3 .skillbox ul li:nth-child(5) img{
+    width: 37%;
+  }
+  .sc3 .skillbox ul li:nth-child(6) img{
+    width: 51%;
+  }
+
+
   @keyframes moving {
     from {
       transform: translateY(-4px);
@@ -1009,6 +1024,7 @@ a {
 
   .App .sc3 {
     padding: 90px 0;
+    height: auto;
   }
 
   .App .sc2 .profile {
@@ -1056,17 +1072,23 @@ a {
   }
   
   .sc3 .skillbox::after {
-    top: -26%;
+    top: -6%;
   }
 
+ 
   .App .sc3 .skillbox ul {
-   justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 20px;
+     box-sizing: border-box;
   }
 
   .App .sc3 .skillbox ul li {
     width: 23%;
-    margin-bottom: 40px;
-  }  
+    padding: 15px 0;
+    margin: 0 25px;
+    margin-bottom: 30px;
+  }
 
   .sc3 .skillbox ul li img {
     width: 28%;
@@ -1397,12 +1419,15 @@ a {
   }
 
   .App .sc3 .skillbox ul {
+    width: 100%;
+    padding: 0;
     justify-content: flex-start;
   }
-
+  
   .App .sc3 .skillbox ul li {
     width: 33.3333%;
     padding: 15px 6px;
+    margin: 0;
     margin-bottom: 25px;
   }
 
