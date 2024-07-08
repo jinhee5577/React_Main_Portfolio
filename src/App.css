@@ -731,25 +731,36 @@ a {
   }
 
   #project #project_box .base1 .proimg_box {
-    background-image: url(./aesset/portmain1.png);
+    background-image: url(./aesset/airport_detect.png);
   }
   #project #project_box .base2 .proimg_box {
-    background-image: url(./aesset/main_p.png);
+    background-image: url(./aesset/portmain1.png);
     /* background-size: 103.5%; */
   }
   #project #project_box .base3 .proimg_box {
-    background-image: url(./aesset/main_p2.png);
+    background-image: url(./aesset/playscent.png);
+    background-size: 76.5% !important;    
   }
   #project #project_box .base4 .proimg_box {
-    background-image: url(./aesset/portmain2.png);
+    background-image: url(./aesset/main_p.png);
   }
   #project #project_box .base5 .proimg_box {
-    background-image: url(./aesset/portmain7.png);
+    background-image: url(./aesset/main_p2.png);
   }
   #project #project_box .base6 .proimg_box {
-    background-image: url(./aesset/portmain6.png);
+    background-image: url(./aesset/portmain2.png);
   }
   #project #project_box .base7 .proimg_box {
+    background-image: url(./aesset/portmain7.png);
+    /* background-size: 102.5%; */
+    background-position: 50% 60%;
+  }
+  #project #project_box .base8 .proimg_box {
+    background-image: url(./aesset/portmain6.png);
+    /* background-size: 102.5%; */
+    background-position: 50% 60%;
+  }
+  #project #project_box .base9 .proimg_box {
     background-image: url(./aesset/portmain4.png);
     /* background-size: 102.5%; */
     background-position: 50% 60%;
@@ -938,7 +949,7 @@ a {
   #project_box .base .proimg_box {
     width: 97%;
     height: calc(100% - 65px);
-    background-size: 96%;
+    /* background-size: 96%; */
     margin: 0 auto;
   }
   #project_box .base #explanation {
@@ -997,6 +1008,14 @@ a {
   #project footer {
     width: 72%;
   }
+}
+
+
+@media all and (max-width: 1400px) {
+  #project #project_box .base3 .proimg_box {
+    background-size: 80.5% !important;    
+  }
+  
 }
 
 
@@ -1490,8 +1509,9 @@ a {
     background-size: 102%;
   }
   #project #project_box .base3 .proimg_box {
+    background-size: 84.5% !important;
     background-position: 50% 50%;
-  }
+  }  
 
   #project_box .base .button_box {
     width: 100%;
